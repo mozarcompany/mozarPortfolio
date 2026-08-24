@@ -1,0 +1,608 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.head{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap:10px;
+    background-color: #2d323a;
+    color: white;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.top-line{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.top-line-paragraph{
+    width: 460px;
+    text-align: right;
+}
+
+.image{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 8px;
+}
+
+.grad{
+    width: 350px;
+    border-radius: 100%;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.8);
+}
+
+.name-and-title{
+    text-align: center;
+}
+
+.name{
+    font-size: xxx-large;
+}
+
+.body{
+    display: flex;
+    flex-direction: column;
+    padding: 100px 133px;
+    height: 100%;
+    width: 100%;
+    gap: 100px;
+    background-color: #F8F8FF;
+}
+
+.paragraphs,
+.head-works{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.second-head{
+    font-size: 4vw;
+    font-weight: 100;
+}
+
+.more-about-me{
+    text-decoration: none;
+    color: black;
+}
+
+.body-paragraph{
+    width: 650px;
+    font-weight: 100;
+}
+
+.more-about-me:hover{
+    text-decoration: underline;
+}
+
+.description{
+    width: 400px;
+}
+
+.works{
+    display: flex;
+    justify-content: space-around;
+    align-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.usc-ces,
+.thumbnail{
+    width: 800px;
+    height: 550px;
+    border-radius: 15px;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.usc-ces:hover,
+.thumbnail:hover,
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.second-header{
+    display: flex;
+    flex-direction: column;
+    padding: 100px 133px;
+    height: 100%;
+    width: 100%;
+    gap: 100px;
+    background-color: #2d323a;
+}
+
+.second-header-head{
+    text-align: center;
+    color: white;
+    font-size: xxx-large;
+}
+
+.skills{
+    font-weight: 100;
+}
+
+.card{
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 20px;
+    break-inside: avoid;
+    background-color: #161B22;
+    padding: 50px 40px;
+    width: 800px;
+    height:auto;
+    border-radius: 24px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #F8F8FF;
+}
+
+.tools{
+    column-count: 2;
+    column-gap: 20px;
+}
+
+.images{
+    display: flex;
+    justify-content: space-around;
+    align-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    height: 100%;
+    padding: 0px 100px;
+    padding-bottom: 24px;
+}
+
+.tool{
+    width: 200px;
+    height: 200px;
+}
+
+.texts{
+    gap: 4px;
+}
+
+.texts-title{
+    font-size: xx-large;
+    font-weight: 100;
+}
+
+.texts-description{
+    font-size: medium;
+}
+
+.concepts-traits{
+    display: inline-block;
+    text-align: center  ;
+    padding: 6px 16px;
+    border-radius: 9999px;
+    border: 1px solid white;
+    color: white;
+    background: transparent;
+}
+
+.foot{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    padding: 66px 133px;
+    background-color: #F8F8FF;
+}
+
+.foot p, 
+.foot h1, 
+.foot h2{
+    padding-bottom: 4px;
+}
+
+.foot p{
+    font-size: x-large;
+    font-weight: 100;
+}
+
+.foot h1{
+    font-size: xxx-large;
+    font-weight: 500;
+}
+
+.foot h2{
+    font-size: xx-large;
+    font-weight: 500;
+}
+
+.contacts{
+    display: flex;
+    flex-direction: row;
+    gap: 240px;
+}
+
+.line{
+    margin: 133px 0px;
+}
+
+@media (max-width: 1500px){
+    .head{
+        height: 100vh;
+    }
+
+    .main-container{
+        width: 100%;
+    }
+
+    .top-line-paragraph{
+        text-align: center;
+        width: 100%;
+    }
+
+    .image{
+        padding: 8px;
+    }
+
+    .grad{
+        width: 450px;
+    }
+
+    .body,
+    .second-header{
+        display: flex;
+        flex-direction: column;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .body-paragraph{
+        width: 100%;
+        font-size: 4vw;
+        text-align: center;
+    }
+
+    .paragraphs{
+        display: flex;
+        gap: 36px;
+        flex-direction: column;
+    }
+
+    .head-works{
+        display: flex;
+        gap: 12px;
+        flex-direction: column;
+    }
+
+    .second-head,
+    .description{
+        width: 100%;
+        text-align: center;
+    }
+
+    .second-head{
+        font-size: 6vw;
+        font-weight: 100;
+    }
+
+    .works{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .usc-ces,
+    .thumbnail{
+        height: 46vh;
+        width: 46vw;
+    }
+
+    .skills{
+        width: 100%;
+        font-size: xxx-large;
+    }
+
+    .card{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        width: 100%;
+    }
+
+    .images{
+        width: 100%;
+        padding: 0px 0px;   
+    }
+
+    .tool{
+        width: 100px;
+        height: 100px;
+    }
+
+    .foot{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 100vh;
+        padding: 30px;
+    }
+
+    .foot p{
+        font-size: large;
+    }
+
+    .contacts{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        gap: 50px;
+    }
+}
+
+@media (max-width: 1000px){
+    .head{
+        height: 100vh;
+    }
+
+    .main-container{
+        width: 100%;
+    }
+
+    .top-line-paragraph{
+        text-align: center;
+        width: 100%;
+    }
+
+    .image{
+        padding: 8px;
+    }
+
+    .grad{
+        width: 450px;
+    }
+
+    .body,
+    .second-header{
+        display: flex;
+        flex-direction: column;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .body-paragraph{
+        width: 100%;
+        font-size: 4vw;
+        text-align: center;
+    }
+
+    .paragraphs{
+        display: flex;
+        gap: 36px;
+        flex-direction: column;
+    }
+
+    .head-works{
+        display: flex;
+        gap: 12px;
+        flex-direction: column;
+    }
+
+    .second-head,
+    .description{
+        width: 100%;
+        text-align: center;
+    }
+
+    .second-head{
+        font-size: 6vw;
+        font-weight: 100;
+    }
+
+    .works{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .usc-ces,
+    .thumbnail{
+        height: 100%;
+        width: 100%;
+    }
+
+    .skills{
+        width: 100%;
+        font-size: xxx-large;
+    }
+
+    .tools{
+        display: flex;
+        height: 100%;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .card{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        width: 100%;
+    }
+
+    .images{
+        width: 100%;
+        padding: 0px 0px;
+    }
+
+    .tool{
+        width: 100px;
+        height: 100px;
+    }
+
+    .foot{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 100vh;
+        padding: 30px;
+    }
+
+    .foot p{
+        font-size: large;
+    }
+
+    .contacts{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        gap: 50px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .head{
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    .main-container{
+        width: 100%;
+    }
+
+    .top-line-paragraph{
+        text-align: center;
+        width: 100%;
+    }
+
+    .image{
+        padding: 8px;
+    }
+
+    .grad{
+        width: 90%;
+    }
+
+    .body,
+    .second-header{
+        display: flex;
+        flex-direction: column;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .body-paragraph{
+        width: 100%;
+        font-size: 6vw;
+        text-align: center;
+    }
+
+    .paragraphs{
+        display: flex;
+        gap: 36px;
+        flex-direction: column;
+    }
+
+    .head-works{
+        display: flex;
+        gap: 12px;
+        flex-direction: column;
+    }
+
+    .second-head,
+    .description{
+        width: 100%;
+        text-align: center;
+    }
+
+    .second-head{
+        font-size: 9vw;
+        font-weight: 100;
+    }
+
+    .works{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .usc-ces,
+    .thumbnail{
+        height: 100%;
+        width: 100%;
+    }
+
+    .skills{
+        width: 100%;
+        font-size: xxx-large;
+    }
+
+    .tools{
+        display: flex;
+        height: 100%;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .card{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        width: 100%;
+    }
+
+    .images{
+        width: 100%;
+        padding: 0px 0px;
+    }
+
+    .tool{
+        width: 100px;
+        height: 100px;
+    }
+
+    .foot{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 100vh;
+        padding: 30px;
+    }
+
+    .foot p{
+        font-size: large;
+    }
+
+    .contacts{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 30px;
+    }
+}
