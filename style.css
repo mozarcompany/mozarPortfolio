@@ -269,7 +269,7 @@
     }
 
     .grad{
-        width: 450px;
+        width: 300px;
     }
 
     .body,
@@ -283,32 +283,33 @@
     }
 
     .body-paragraph{
-        width: 100%;
-        font-size: 4vw;
-        text-align: center;
+        width: 80%;
     }
 
     .paragraphs{
         display: flex;
-        gap: 36px;
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: space-between;
     }
 
     .head-works{
         display: flex;
-        gap: 12px;
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: space-between;
     }
 
     .second-head,
     .description{
         width: 100%;
-        text-align: center;
     }
 
     .second-head{
-        font-size: 6vw;
+        font-size: 40px;
         font-weight: 100;
+    }
+
+    .description{
+        text-align: right;
     }
 
     .works{
