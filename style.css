@@ -118,8 +118,8 @@
 .usc-ces,
 .thumbnail,
 .thumbnail2{
-    width: 800px;
-    height: 550px;
+    width: 600px;
+    height: 500px;
     border-radius: 15px;
     transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
@@ -159,7 +159,7 @@
     break-inside: avoid;
     background-color: #161B22;
     padding: 50px 40px;
-    width: 800px;
+    width: auto;
     height:auto;
     border-radius: 24px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -174,7 +174,7 @@
 .images{
     display: flex;
     justify-content: space-around;
-    align-content: space-between;
+    align-content:space-around;
     flex-wrap: wrap;
     gap: 20px;
     height: 100%;
@@ -183,8 +183,8 @@
 }
 
 .tool{
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
 }
 
 .texts{
