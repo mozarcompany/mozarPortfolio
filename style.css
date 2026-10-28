@@ -265,7 +265,7 @@
     }
 
     .grad{
-        width: 300px;
+        width: 450px;
     }
 
     .body,
@@ -308,16 +308,14 @@
         text-align: right;
     }
 
-    .works{
+    /* .works{
         display: flex;
         flex-direction: row;
-    }
+    } */
 
-    .usc-ces,
-    .thumbnail,
-    .thumbnail2{
-        height: 46vh;
-        width: 46vw;
+    .thumbnail{
+        /* height: 50vh; */
+        width: 46.5vw;
     }
 
     .skills{
@@ -381,7 +379,7 @@
     }
 
     .grad{
-        width: 450px;
+        width: 300px;
     }
 
     .body,
@@ -426,12 +424,11 @@
     .works{
         display: flex;
         flex-direction: column;
+        flex-wrap: nowrap;
     }
 
-    .usc-ces,
-    .thumbnail,
-    .thumbnail2{
-        height: 100%;
+    .thumbnail{
+        height: 50%;
         width: 100%;
     }
 
